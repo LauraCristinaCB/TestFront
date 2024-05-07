@@ -15,6 +15,7 @@ export class CombpalComponent {
   frase: string;
   llave: string;
   combinacion: CombPablabra
+  exist: boolean | false
 
   constructor() {}
 
@@ -31,18 +32,15 @@ export class CombpalComponent {
           if(comb.frase == this.combinacion.frase){
             if(comb.llave == this.combinacion.llave){
               alert("la combinación existe")
+              this.exist = true
             }
           }
-        } else {
-          alert("la combinación NO existe")
         }
     });
+    if(!this.exist){
+      alert("la combinación NO existe")
     }
-
-    getRandomInt() {
-      return Math.floor(Math.random() * 200000);
     }
-
     reenviar(){
       this.palabra=''
       this.frase=''
