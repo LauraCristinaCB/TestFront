@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CodopComponent } from './components/codop/codop.component';
+import { ServextComponent } from './components/servext/servext.component';
+import { CombpalComponent } from './components/combpal/combpal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CodopComponent
+    CodopComponent,
+    ServextComponent,
+    CombpalComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,23 @@
-<p>codop works!</p>
+<div class="header">
+  <h1>Reto Codigo OP</h1>
+  <div class="spacer"></div>
+</div>
+
+<div class="main">
+  <div class="formOp">
+    <form (ngSubmit)="onSubmit()">
+      <ul>
+        <ol>
+          <label for="name">Codigo:</label>
+          <input type="text" name="codigoop" [(ngModel)]="codigo" required />
+        </ol>
+      </ul>
+      <ul class="button">
+        <button type="submit">Aceptar</button>
+      </ul>
+    </form>
+    <ul class="button">
+      <button (click)="reenviar()">reenviar</button>
+    </ul>
+  </div>
+</div>

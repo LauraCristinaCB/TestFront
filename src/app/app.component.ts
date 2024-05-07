@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from './services/Data.service';
+import { Component } from '@angular/core';
 import { LoginService } from './services/login.service';
 import { HttpClient } from '@angular/common/http';
 
@@ -15,7 +14,6 @@ export class AppComponent {
   password: string;
   result: boolean ;
   reto: number;
-  aux: string;
   op: boolean | false;
   servext: boolean | false;
   combpal: boolean | false;
@@ -49,14 +47,5 @@ export class AppComponent {
   }
   getRandomInt() {
     return Math.floor(Math.random() * 3);
-  }
-  getOtp(){
-    return true;
-  }
-  getServExterno(){
-    return true;
-  }
-  getCombPalabras(){
-    return true;
   }
 }
