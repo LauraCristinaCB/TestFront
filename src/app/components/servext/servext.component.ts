@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-servext',
   templateUrl: './servext.component.html',
   styleUrls: ['./servext.component.css']
 })
-export class ServextComponent implements OnInit {
+export class ServextComponent {
+  tipoId: string;
+  numId: string;
+  numProd: string;
+  claveProd: string
 
   constructor() { }
-
-  ngOnInit() {
-  }
+  
+  onSubmit() {}
+  reenviar() {}
 
 }

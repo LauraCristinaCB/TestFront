@@ -1,0 +1,35 @@
+<div class="header">
+  <h1>Reto Servicio Externo</h1>
+  <div class="spacer"></div>
+</div>
+
+<div class="main">
+  <div class="formOp">
+    <form (ngSubmit)="onSubmit()">
+      <ul>
+        <ol>
+          <label for="name">Tipo de identificación:</label>
+          <input type="text" name="codigoop" [(ngModel)]="tipoId" required />
+        </ol>
+        <ol>
+          <label for="name">Numero de identificación:</label>
+          <input type="text" name="codigoop" [(ngModel)]="numId" required />
+        </ol>
+        <ol>
+          <label for="name">Numero de producto:</label>
+          <input type="text" name="codigoop" [(ngModel)]="numProd" required />
+        </ol>
+        <ol>
+          <label for="name">Clave de producto:</label>
+          <input type="text" name="codigoop" [(ngModel)]="claveProd" required />
+        </ol>
+      </ul>
+      <ul class="button">
+        <button type="submit">Aceptar</button>
+      </ul>
+    </form>
+    <ul class="button">
+      <button (click)="reenviar()">reenintentar</button>
+    </ul>
+  </div>
+</div>
