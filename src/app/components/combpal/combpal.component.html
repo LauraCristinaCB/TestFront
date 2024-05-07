@@ -1,3 +1,31 @@
-<p>
-  combpal works!
-</p>
+<div class="header">
+  <h1>Reto Combinación de palabras</h1>
+  <div class="spacer"></div>
+</div>
+
+<div class="main">
+  <div class="formComb">
+    <form (ngSubmit)="onSubmit()">
+      <ul>
+        <ol>
+          <label for="name">Palabra:</label>
+          <input type="text" name="codigoop" [(ngModel)]="palabra" required />
+        </ol>
+        <ol>
+          <label for="name">Frase:</label>
+          <input type="text" name="codigoop" [(ngModel)]="frase" required />
+        </ol>
+        <ol>
+          <label for="name">Llave:</label>
+          <input type="text" name="codigoop" [(ngModel)]="llave" required />
+        </ol>
+      </ul>
+      <ul class="button">
+        <button type="submit">Aceptar</button>
+      </ul>
+    </form>
+    <ul class="button">
+      <button (click)="reenviar()">Reintentar</button>
+    </ul>
+  </div>
+</div>
