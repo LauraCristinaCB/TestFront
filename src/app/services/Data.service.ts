@@ -13,7 +13,7 @@ export class DataService {
     const params = new HttpParams().set('id', 1);
 
     // Realiza la solicitud GET con los parámetros de consulta
-    return this.http.get<any>('http://localhost:3000/state', { params: params });
+    return this.http.get<any>('http://localhost:3000/client', { params: params });
   }
 }
 
